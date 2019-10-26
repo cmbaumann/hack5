@@ -99,6 +99,13 @@
         <td><%= user.css1 %></td>
       <% end %>
     </tr>
+    <tr>
+      <th></th>
+      <%@users.each do |user| %>
+        <td><%= link_to 'Destroy', user, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      <% end %>
+    </tr>
+    </table>
 </table>
 
 <!--<table>
