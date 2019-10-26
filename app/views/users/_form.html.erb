@@ -1,0 +1,163 @@
+<%= form_with(model: user, local: true) do |form| %>
+  <% if user.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(user.errors.count, "error") %> prohibited this user from being saved:</h2>
+
+      <ul>
+      <% user.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <br>
+  <h2>Your Information:</h2>
+
+  <div class="field">
+    <%= form.label :name %>
+    <%= form.text_field :name, id: :user_name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :school %>
+    <%= form.text_field :school, id: :user_school %>
+  </div>
+
+  <div class="field">
+    <%= form.label :year %>
+    <%= form.select :year, ["Freshman", "Sophomore", "Junior", "Senior"] %>
+  </div>
+
+  <div class="field">
+    <%= form.label :major %>
+    <%= form.text_field :major, id: :user_major %>
+  </div>
+
+  <h3>Skills:</h3>
+  <div class="field">
+    <p><%= form.check_box :front_end1 %>Front End</p>
+  </div>
+
+  <div class="field">
+    <p><%= form.check_box :back_end1 %>Back End</p>
+  </div>
+
+  <div class="field">
+    <p><%= form.check_box :design1 %>Design</p>
+  </div>
+
+  <div class="field">
+    <p><%= form.check_box :machine_learning1 %>Machine Learning</p>
+  </div>
+
+  <h3>Programming Languages:</h3>
+  <div class="field">
+    <p><%= form.check_box :java1 %>Java</p>
+  </div>
+
+  <div class="field">
+    <p><%= form.check_box :python1 %>Python</p>
+  </div>
+
+  <div class="field">
+    <p><%= form.check_box :ruby1 %>Ruby</p>
+  </div>
+
+  <div class="field">
+    <p><%= form.check_box :javascript1 %>JavaScript</p>
+  </div>
+
+  <div class="field">
+    <p><%= form.check_box :C1 %>C</p>
+  </div>
+
+  <div class="field">
+    <p><%= form.check_box :Cplusplus1 %>C++</p>
+  </div>
+
+  <div class="field">
+    <p><%= form.check_box :Csharp1 %>C#</pC>
+  </div>
+
+  <div class="field">
+    <p><%= form.check_box :html1 %>HTML</p>
+  </div>
+
+  <div class="field">
+    <p><%= form.check_box :css1 %>CSS</p>
+  </div>
+
+  <h3>Interests</h3>
+  <div class="field">
+    <p><%= form.check_box :app_dev1 %>App Development</p>
+  </div>
+
+  <div class="field">
+    <p><%= form.check_box :web_dev1 %>Web Development</p>
+  </div>
+
+  <div class="field">
+    <p><%= form.check_box :hardware1 %>Hardware</p>
+  </div>
+
+  <div class="field">
+    <p><%= form.check_box :software_dev1 %>Software Development</p>
+  </div>
+
+  <div class="field">
+    <p>Commitment: 1 (least committed) - 10 (most committed)</p>
+    <%= form.select :commitment, [1,2,3,4,5,6,7,8,9,10] %>
+  </div>
+
+  <br>
+  <h2>Teammate Preferences</h2>
+  <p>Note: You will automatically be matched with teammates that have the same commitment level and interests as you.</p>
+
+  <div class="field">
+    <p>Year</p>
+    <%= form.select :year2, ["Freshman", "Sophomore","Junior", "Senior"] %>
+  </div>
+
+  <h3>Programming Languages</h3>
+  <div class="field">
+    <p><%= form.check_box :java2 %>Java</p>
+  </div>
+
+  <div class="field">
+    <p><%= form.check_box :python2 %>Python</p>
+  </div>
+
+  <div class="field">
+    <p><%= form.check_box :ruby2 %>Ruby</p>
+  </div>
+
+  <div class="field">
+    <p><%= form.check_box :javascript2 %>JavaScript</p>
+  </div>
+
+  <div class="field">
+    <p><%= form.check_box :C2 %>C</p>
+  </div>
+
+  <div class="field">
+    <p><%= form.check_box :Cplusplus2 %>C++</p>
+  </div>
+
+  <div class="field">
+    <p><%= form.check_box :Csharp2 %>C#</p>
+  </div>
+
+  <div class="field">
+    <p><%= form.check_box :html2 %>HTML</p>
+  </div>
+
+  <div class="field">
+    <p><%= form.check_box :css2 %>CSS</p>
+  </div>
+  <br>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

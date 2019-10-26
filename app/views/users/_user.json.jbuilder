@@ -1,0 +1,2 @@
+json.extract! user, :id, :name, :school, :year, :major, :front_end1, :back_end1, :design1, :machine_learning1, :java1, :python1, :ruby1, :javascript1, :C1, :Cplusplus1, :Csharp1, :html1, :css1, :app_dev1, :web_dev1, :hardware1, :software_dev1, :commitment, :year2, :java2, :python2, :ruby2, :javascript2, :C2, :Cplusplus2, :Csharp2, :html2, :css2, :created_at, :updated_at
+json.url user_url(user, format: :json)

@@ -1,0 +1,183 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Users</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <% @users.each do |user| %>
+      <td><%= user.name %></td>
+      <%end %>
+  </tr>
+  <tr>
+    <th>School</th>
+    <% @users.each do |user| %>
+      <td><%= user.year %></td>
+    <% end %>
+  </tr>
+  <tr>
+    <th>Major</th>
+    <% @users.each do |user| %>
+      <td><%= user.major %></td>
+    <% end %>
+  </tr>
+  <tr>
+    <th>Front End</th>
+    <% @users.each do |user| %>
+      <td><%= user.front_end1 %></td>
+    <% end %>
+  </tr>
+  <tr>
+    <th>Back End</th>
+    <% @users.each do |user| %>
+      <td><%= user.back_end1 %></td>
+    <% end %>
+  </tr>
+  <tr>
+    <th>Design</th>
+    <% @users.each do |user| %>
+      <td><%= user.design1 %></td>
+    <% end %>
+  </tr>
+  <tr>
+    <th>Machine Learning</th>
+    <% @users.each do |user| %>
+      <td><%= user.machine_learning1 %></td>
+    <% end %>
+  </tr>
+  <tr>
+    <th>Java</th>
+    <% @users.each do |user| %>
+      <td><%= user.java1 %></td>
+    <% end %>
+  </tr>
+  <tr>
+    <th>Python</th>
+    <% @users.each do |user| %>
+      <td><%= user.python1 %></td>
+    <% end %>
+  </tr>
+  <tr>
+    <th>Ruby</th>
+    <% @users.each do |user| %>
+      <td><%= user.ruby1 %></td>
+    <% end %>
+  </tr>
+  <tr>
+    <th>JavaScript</th>
+    <% @users.each do |user| %>
+      <td><%= user.javascript1 %></td>
+    <% end %>
+  </tr>
+  <tr>
+    <th>C</th>
+    <% @users.each do |user| %>
+      <td><%= user.C1 %></td>
+    <% end %>
+
+    <tr>
+      <th>C++</th>
+      <% @users.each do |user| %>
+        <td><%= user.Cplusplus1 %></td>
+      <% end %>
+    </tr>
+    <tr>
+      <th>C#</th>
+      <% @users.each do |user| %>
+        <td><%= user.Csharp1 %></td>
+      <% end %>
+    </tr>
+    <tr>
+      <th>HTML</th>
+      <% @users.each do |user| %>
+        <td><%= user.html1 %></td>
+      <% end %>
+    </tr>
+    <tr>
+      <th>CSS</th>
+      <% @users.each do |user| %>
+        <td><%= user.css1 %></td>
+      <% end %>
+    </tr>
+</table>
+
+<!--<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>School</th>
+      <th>Year</th>
+      <th>Major</th>
+      <th>Front End</th>
+      <th>Back End</th>
+      <th>Design</th>
+      <th>Machine Learning</th>
+      <th>Java</th>
+      <th>Python</th>
+      <th>Ruby</th>
+      <th>JavaScript</th>
+      <th>C</th>
+      <th>C++</th>
+      <th>C#</th>
+      <th>HTML</th>
+      <th>CSS</th>
+      <th>App Development</th>
+      <th>Web Development</th>
+      <th>Hardware</th>
+      <th>Software Development</th>
+      <th>Commitment</th>
+      <th>Year</th>
+      <th>Java</th>
+      <th>Python</th>
+      <th>Ruby</th>
+      <th>Javascript</th>
+      <th>C</th>
+      <th>C++</th>
+      <th>C#</th>
+      <th>Html</th>
+      <th>Css</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @users.each do |user| %>
+      <tr>
+        <td><%= user.name %></td>
+        <td><%= user.school %></td>
+        <td><%= user.year %></td>
+        <td><%= user.major %></td>
+        <td><%= user.front_end1 %></td>
+        <td><%= user.back_end1 %></td>
+        <td><%= user.design1 %></td>
+        <td><%= user.machine_learning1 %></td>
+        <td><%= user.java1 %></td>
+        <td><%= user.python1 %></td>
+        <td><%= user.ruby1 %></td>
+        <td><%= user.javascript1 %></td>
+        <td><%= user.C1 %></td>
+        <td><%= user.Cplusplus1 %></td>
+        <td><%= user.Csharp1 %></td>
+        <td><%= user.html1 %></td>
+        <td><%= user.css1 %></td>
+        <td><%= user.app_dev1 %></td>
+        <td><%= user.web_dev1 %></td>
+        <td><%= user.hardware1 %></td>
+        <td><%= user.software_dev1 %></td>
+        <td><%= user.commitment %></td>
+        <td><%= user.year2 %></td>
+        <td><%= user.java2 %></td>
+        <td><%= user.python2 %></td>
+        <td><%= user.ruby2 %></td>
+        <td><%= user.javascript2 %></td>
+        <td><%= user.C2 %></td>
+        <td><%= user.Cplusplus2 %></td>
+        <td><%= user.Csharp2 %></td>
+        <td><%= user.html2 %></td>
+        <td><%= user.css2 %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>-->
+
+<%= link_to 'New User', new_user_path %>
