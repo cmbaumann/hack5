@@ -3,10 +3,10 @@
 <script type="text/javascript" >
   function myfunction(val) {
       if (val == 0) {
-          document.write("no")
+          return "No";
       }
       else {
-          document.write("yes")
+          return "Yes";
       }
   }
 </script>
@@ -35,89 +35,121 @@
 <h3>Interests</h3>
 <p>
   <strong>Front End:</strong>
-  <script>
-    myfunction(@user.front_end1)
+  <script type="text/javascript">
+    document.write(myfunction(<%= @user.front_end1 %>))
   </script>
 </p>
 
 <p>
   <strong>Back End:</strong>
-  <%= @user.back_end1 %>
+  <script type="text/javascript">
+      document.write(myfunction(<%= @user.back_end1 %>))
+  </script>
 </p>
 
 <p>
   <strong>Design:</strong>
-  <%= @user.design1 %>
+  <script type="text/javascript">
+      document.write(myfunction(<%= @user.design1 %>))
+  </script>
 </p>
 
 <p>
   <strong>Machine Learning:</strong>
-  <%= @user.machine_learning1 %>
+  <script type="text/javascript">
+      document.write(myfunction(<%= @user.machine_learning1 %>))
+  </script>
 </p>
 
 <p>
   <strong>Java:</strong>
-  <%= @user.java1 %>
+  <script type="text/javascript">
+      document.write(myfunction(<%= @user.java1 %>))
+  </script>
 </p>
 
 <p>
   <strong>Python:</strong>
-  <%= @user.python1 %>
+  <script type="text/javascript">
+      document.write(myfunction(<%= @user.python1 %>))
+  </script>
 </p>
 
 <p>
   <strong>Ruby:</strong>
-  <%= @user.ruby1 %>
+  <script type="text/javascript">
+      document.write(myfunction(<%= @user.ruby1 %>))
+  </script>
 </p>
 
 <p>
   <strong>JavaScript:</strong>
-  <%= @user.javascript1 %>
+  <script type="text/javascript">
+      document.write(myfunction(<%= @user.javascript1 %>))
+  </script>
 </p>
 
 <p>
   <strong>C:</strong>
-  <%= @user.C1 %>
+  <script type="text/javascript">
+      document.write(myfunction(<%= @user.C1 %>))
+  </script>
 </p>
 
 <p>
   <strong>C++:</strong>
-  <%= @user.Cplusplus1 %>
+  <script type="text/javascript">
+      document.write(myfunction(<%= @user.Cplusplus1 %>))
+  </script>
 </p>
 
 <p>
   <strong>C#:</strong>
-  <%= @user.Csharp1 %>
+  <script type="text/javascript">
+      document.write(myfunction(<%= @user.Csharp1 %>))
+  </script>
 </p>
 
 <p>
   <strong>HTML:</strong>
-  <%= @user.html1 %>
+  <script type="text/javascript">
+      document.write(myfunction(<%= @user.html1 %>))
+  </script>
 </p>
 
 <p>
   <strong>CSS:</strong>
-  <%= @user.css1 %>
+  <script type="text/javascript">
+      document.write(myfunction(<%= @user.css1 %>))
+  </script>
 </p>
 
 <p>
   <strong>App Development:</strong>
-  <%= @user.app_dev1 %>
+  <script type="text/javascript">
+      document.write(myfunction(<%= @user.app_dev1 %>))
+  </script>
 </p>
 
 <p>
   <strong>Web Development:</strong>
-  <%= @user.web_dev1 %>
+  <script type="text/javascript">
+      document.write(myfunction(<%= @user.web_dev1 %>))
+  </script>
 </p>
 
 <p>
   <strong>Hardware:</strong>
-  <%= @user.hardware1 %>
+  <script type="text/javascript">
+      document.write(myfunction(<%= @user.hardware1 %>))
+  </script>
 </p>
 
 <p>
   <strong>Software Development:</strong>
-  <%= @user.software_dev1 %>
+  <script type="text/javascript">
+      document.write(myfunction(<%= @user.software_dev1 %>))
+  </script>
 </p>
 
 <p>
@@ -134,47 +166,65 @@
 
 <p>
   <strong>Java:</strong>
-  <%= @user.java2 %>
+  <script type="text/javascript">
+      document.write(myfunction(<%= @user.java2 %>))
+  </script>
 </p>
 
 <p>
   <strong>Python:</strong>
-  <%= @user.python2 %>
+  <script type="text/javascript">
+      document.write(myfunction(<%= @user.python2 %>))
+  </script>
 </p>
 
 <p>
   <strong>Ruby:</strong>
-  <%= @user.ruby2 %>
+  <script type="text/javascript">
+      document.write(myfunction(<%= @user.ruby2 %>))
+  </script>
 </p>
 
 <p>
   <strong>JavaScript:</strong>
-  <%= @user.javascript2 %>
+  <script type="text/javascript">
+      document.write(myfunction(<%= @user.javascript2 %>))
+  </script>
 </p>
 
 <p>
   <strong>C:</strong>
-  <%= @user.C2 %>
+  <script type="text/javascript">
+      document.write(myfunction(<%= @user.C2 %>))
+  </script>
 </p>
 
 <p>
   <strong>C++:</strong>
-  <%= @user.Cplusplus2 %>
+  <script type="text/javascript">
+      document.write(myfunction(<%= @user.Cplusplus2 %>))
+  </script>
 </p>
 
 <p>
   <strong>C#:</strong>
-  <%= @user.Csharp2 %>
+  <script type="text/javascript">
+      document.write(myfunction(<%= @user.Csharp2 %>))
+  </script>
 </p>
 
 <p>
   <strong>HTML:</strong>
-  <%= @user.html2 %>
+  <script type="text/javascript">
+      document.write(myfunction(<%= @user.html2 %>))
+  </script>
 </p>
 
 <p>
   <strong>CSS:</strong>
-  <%= @user.css2 %>
+  <script type="text/javascript">
+      document.write(myfunction(<%= @user.css2 %>))
+  </script>
 </p>
 <br>
 
