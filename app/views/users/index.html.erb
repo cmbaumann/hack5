@@ -1,5 +1,16 @@
 <p id="notice"><%= notice %></p>
 
+<script type="text/javascript" >
+    function myfunction(val) {
+        if (val == 0) {
+            return "No";
+        }
+        else {
+            return "Yes";
+        }
+    }
+</script>
+
 <h1>Users</h1>
 <p tag="w"></p>
 <%= link_to 'Home', root_path %> |
@@ -26,81 +37,107 @@
     <% end %>
   </tr>
   <tr>
-    <td><strong>Name</strong></td>
+    <td><strong>Front End</strong></td>
     <% @users.each do |user| %>
-      <td><%= user.front_end1 %></td>
+      <td><script type="text/javascript">
+          document.write(myfunction(<%= user.front_end1 %>))
+      </script></td>
     <% end %>
   </tr>
   <tr>
     <td><strong>Back End</strong></td>
     <% @users.each do |user| %>
-      <td><%= user.back_end1 %></td>
+      <td><script type="text/javascript">
+          document.write(myfunction(<%= user.back_end1 %>))
+      </script></td>
     <% end %>
   </tr>
   <tr>
     <td><strong>Design</strong></td>
     <% @users.each do |user| %>
-      <td><%= user.design1 %></td>
+      <td><script type="text/javascript">
+          document.write(myfunction(<%= user.design1 %>))
+      </script></td>
     <% end %>
   </tr>
   <tr>
     <td><strong>Machine Learning</strong></td>
     <% @users.each do |user| %>
-      <td><%= user.machine_learning1 %></td>
+      <td><script type="text/javascript">
+          document.write(myfunction(<%= user.machine_learning1 %>))
+      </script></td>
     <% end %>
   </tr>
   <tr>
     <td><strong>Java</strong></td>
     <% @users.each do |user| %>
-      <td><%= user.java1 %></td>
+      <td><script type="text/javascript">
+          document.write(myfunction(<%= user.java1 %>))
+      </script></td>
     <% end %>
   </tr>
   <tr>
     <td><strong>Python</strong></td>
     <% @users.each do |user| %>
-      <td><%= user.python1 %></td>
+      <td><script type="text/javascript">
+          document.write(myfunction(<%= user.python1 %>))
+      </script></td>
     <% end %>
   </tr>
   <tr>
     <td><strong>Ruby</strong></td>
     <% @users.each do |user| %>
-      <td><%= user.ruby1 %></td>
+      <td><script type="text/javascript">
+          document.write(myfunction(<%= user.ruby1 %>))
+      </script></td>
     <% end %>
   </tr>
   <tr>
     <td><strong>JavaScript</strong></td>
     <% @users.each do |user| %>
-      <td><%= user.javascript1 %></td>
+      <td><script type="text/javascript">
+          document.write(myfunction(<%= user.javascript1 %>))
+      </script></td>
     <% end %>
   </tr>
   <tr>
     <td><strong>C</strong></td>
     <% @users.each do |user| %>
-      <td><%= user.C1 %></td>
+      <td><script type="text/javascript">
+          document.write(myfunction(<%= user.C1 %>))
+      </script></td>
     <% end %>
 
     <tr>
       <td><strong>C++</strong></td>
       <% @users.each do |user| %>
-        <td><%= user.Cplusplus1 %></td>
+        <td><script type="text/javascript">
+            document.write(myfunction(<%= user.Cplusplus1 %>))
+        </script></td>
       <% end %>
     </tr>
     <tr>
       <td><strong>C#</strong></td>
       <% @users.each do |user| %>
-        <td><%= user.Csharp1 %></td>
+        <td><script type="text/javascript">
+            document.write(myfunction(<%= user.Csharp1 %>))
+        </script></td>
       <% end %>
     </tr>
     <tr>
       <td><strong>HTML</strong></td>
       <% @users.each do |user| %>
-        <td><%= user.html1 %></td>
+        <td><script type="text/javascript">
+            document.write(myfunction(<%= user.html1 %>))
+        </script></td>
       <% end %>
     </tr>
     <tr>
       <td><strong>CSS</strong></td>
       <% @users.each do |user| %>
-        <td><%= user.css1 %></td>
+        <td><script type="text/javascript">
+            document.write(myfunction(<%= user.css1 %>))
+        </script></td>
       <% end %>
     </tr>
     <tr>
