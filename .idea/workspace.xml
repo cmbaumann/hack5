@@ -8,13 +8,28 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+        <option value="Erb File" />
+        <option value="SCSS File" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1SjAyxAlMJVm78wmI4kgL97FPIB" />
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/views" />
+    <property name="list.type.of.created.stylesheet" value="SCSS" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\cassi\Documents\GitHub\hack5\app\views" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -123,7 +138,7 @@
       <workItem from="1572067888365" duration="5899000" />
       <workItem from="1572100548901" duration="105000" />
       <workItem from="1572100814659" duration="7806000" />
-      <workItem from="1572116760573" duration="1045000" />
+      <workItem from="1572116760573" duration="8822000" />
     </task>
     <servers />
   </component>

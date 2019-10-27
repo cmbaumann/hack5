@@ -13,3 +13,27 @@
  *= require_tree .
  *= require_self
  */
+
+table {
+    border-collapse: collapse;
+}
+
+table, td, th {
+    border: 1px black solid;
+}
+
+p .w {
+    text: white;
+}
+
+a:link {
+    color: black;
+}
+
+a:visited {
+    color: grey;
+}
+
+body {
+    top_padding: 100px;
+}
