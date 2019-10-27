@@ -1,15 +1,7 @@
 <p id="notice"><%= notice %></p>
 
-<script type="text/javascript" >
-  function myfunction(val) {
-      if (val == 0) {
-          document.write("no")
-      }
-      else {
-          document.write("yes")
-      }
-  }
-</script>
+<p>Note: 0's represent 'No', and 1's represent 'Yes'</p>
+<br>
 
 <p>
   <strong>Name:</strong>
@@ -36,7 +28,7 @@
 <p>
   <strong>Front End:</strong>
   <script>
-    myfunction(@user.front_end1)
+    <%= @user.front_end1 %>
   </script>
 </p>
 
