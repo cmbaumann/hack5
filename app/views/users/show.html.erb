@@ -1,5 +1,16 @@
 <p id="notice"><%= notice %></p>
 
+<script type="text/javascript" >
+  function myfunction(val) {
+      if (val == 0) {
+          document.write("no")
+      }
+      else {
+          document.write("yes")
+      }
+  }
+</script>
+
 <p>
   <strong>Name:</strong>
   <%= @user.name %>
@@ -24,7 +35,9 @@
 <h3>Interests</h3>
 <p>
   <strong>Front End:</strong>
-  <%= @user.front_end1 %>
+  <script>
+    myfunction(@user.front_end1)
+  </script>
 </p>
 
 <p>
@@ -165,6 +178,6 @@
 </p>
 <br>
 
+<%= link_to 'Home', root_path %> |
 <%= link_to 'Edit', edit_user_path(@user) %> |
-<%= link_to 'Back', users_path %> |
-<%= link_to 'Destroy', user, method: :delete, data: { confirm: 'Are you sure?' } %>
+<%= link_to 'Cancel', users_path %>
